@@ -7,7 +7,11 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "model:generate": "npx sequelize-cli model:generate --name User --attributes firstName:string,lastName:string,email:string",
     "db:migrate": "npx sequelize-cli db:migrate",
-    "db:migrate:undo": "npx sequelize-cli db:migrate:undo"
+    "db:migrate:undo": "npx sequelize-cli db:migrate:undo",
+    "db:changeColumnType": "sequelize migration:create --name changeColumnType",
+    "db:addColumn": "sequelize migration:create --name addColumn",
+    "db:deleteColumn": "sequelize migration:create --name deleteColumn",
+    "db:changeColumnName": "sequelize migration:create --name changeColumnName"
   },
   "keywords": [],
   "author": "",
